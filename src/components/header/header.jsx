@@ -26,7 +26,7 @@ export default function Header() {
                         <li className='header__li'><Link to='/' className='header__li-link' onClick={closeMenu}>HOME</Link></li>
                         <li className='header__li'><Link to='/destinations' className='header__li-link' onClick={closeMenu}><b>01</b> DESTINATION</Link></li>
                         <li className='header__li'><Link to='/crew' className='header__li-link' onClick={closeMenu}><b>02</b> CREW</Link></li>
-                        <li className='header__li'><Link className='header__li-link' onClick={closeMenu}><b>03</b> TECHNOLOGY</Link></li>
+                        <li className='header__li'><Link to='/technology' className='header__li-link' onClick={closeMenu}><b>03</b> TECHNOLOGY</Link></li>
                     </ul>                
                     <button className='header__nav-button' onClick={closeMenu}><img src={iconClose} alt="" /></button>
                 </nav>
