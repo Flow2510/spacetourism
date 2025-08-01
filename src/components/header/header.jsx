@@ -27,7 +27,7 @@ export default function Header() {
                 <nav className='header__nav'>
                     <ul className='header__list'>
                         {menuList.map((item, index) => (
-                            <li key={item.toLowerCase()} className='header__li'><Link to={item} className={selectedPage === index ? 'header__li-link--selected' : "header__li-link"} onClick={ () => {closeMenu(); setSelectedPage(index)}}>{item}</Link></li>
+                            <li key={item.toLowerCase()} className='header__li'><Link to={item} className={selectedPage === index ? 'header__li-link header__li-link--selected' : "header__li-link"} onClick={ () => {closeMenu(); setSelectedPage(index)}}>{item}</Link></li>
                         ))}
                     </ul>                
                     <button className='header__nav-button' onClick={closeMenu}><img src={iconClose} alt="" /></button>

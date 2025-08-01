@@ -1,5 +1,5 @@
 .background-destinations{
-    background: url(../assets/destination/background-destination-mobile.jpg);
+    background: url(../assets/destination/background-destination-desktop.jpg);
     position: fixed; 
     top: 0;
     left: 0;
@@ -27,8 +27,20 @@
 
 .destinations{
     color: white;
+    padding: 1rem;
 
     &__title{
         text-align: center;
+        font-family: "barlow";
+        font-weight: 300;
+        font-size: 1.2rem;
+
+        span{
+            color: rgb(119, 119, 119);
+            margin-right: 2rem;
+            font-family: "barlow condensed";
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
     }
 }

@@ -3,8 +3,9 @@
     text-align: center;
 
     &__image{
-        width: 60%;
+        width: 50%;
         margin: 2rem 0;
+        padding: 1rem 0;
     }
 
     &__nav{
@@ -17,14 +18,29 @@
             border: none;
             background: transparent;
             color: #D0D6F9;
+            font-family: "barlow condensed";
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 200;
 
             &:hover{
                 color: white;
             }
 
             &--selected{
+                position: relative;
                 color: white;
-                text-decoration: underline;
+
+                &::after{
+                    position: absolute;
+                    left: 0;
+                    width: 77%;
+                    transform: translatex(15%);
+                    bottom: -1rem;
+                    content: "";
+                    height: 3px;
+                    background-color: white;
+                }
             }
         }
     }
@@ -32,31 +48,65 @@
     &__name{
         color: white;
         font-size: 4rem;
+        padding: 2rem 0 1.5rem;
+        font-family: "bellefair", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__description{
+        font-weight: 300;
+        font-family: "barlow", sans-serif;
+        line-height: 1.6rem;
     }
 
     &__line{
-        width: 100%;
+        width: 95%;
         height: 1px;
-        background-color: #D0D6F9;
-        margin: 1rem 0;
+        background-color: #7c7c7c;
+        margin: 2rem auto;
+        
     }
 
     &__information{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
     }
 
     &__distance{
 
+        &-subtitle{
+            padding-bottom: 1rem;
+            font-weight: 200;
+            font-family: "barlow condensed", sans-serif;
+            font-size: 1.4rem;
+        }
+
         &-distance{
             color: white;
+            font-family: "bellefair", sans-serif;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 2rem;
         }
     }
 
     &__travel{
+        &-subtitle{
+            padding-bottom: 1rem;
+            font-weight: 200;
+            font-family: "barlow condensed", sans-serif;
+            font-size: 1.4rem;
+        }
 
         &-travel{
             color: white;
+            font-family: "bellefair", sans-serif;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 2rem;
         }
     }
 }

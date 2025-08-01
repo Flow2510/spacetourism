@@ -12,7 +12,7 @@ export default function Slider({category, name, description, image, crew, onSele
                 <p className='slider__content-description'>{description}</p>
                 <div className='slider__dots'>
                     {crew.map((member, index) => (
-                        <button className={`slider__dots-dot${memberSelected === index ? ' slider__dots-dot--selected' : ''}`} key={index} onClick={() => {onSelect(index); setMemberSelected(index)}}></button>
+                        <button className={`slider__dots-dot${memberSelected === index ? ' slider__dots-dot--selected' : ''}`} key={member.name} onClick={() => {onSelect(index); setMemberSelected(index)}}></button>
                     ))}
                 </div>
             </div>

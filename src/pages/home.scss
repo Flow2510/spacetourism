@@ -28,27 +28,92 @@
 .home{
     text-align: center;
     color: #D0D6F9;
-    padding: 1rem 0;
+    padding: 1rem;
+    width: 100%;
 
-    &__title{
-        color: white;
-        padding: 1.5rem 0;
-        font-size: 3rem;
+    @media screen and (min-width:750px) {
+        margin: 0 auto;
+        max-width: 650px;
     }
 
-    &__link{
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: white;
-        border-radius: 9999px;
-        height: 140px;
-        width: 140px;
+    @media screen and (min-width:1200px) {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
-        color: black;
+        max-width: 1200px;
+        text-align: left;
+    }
+
+    &__content{
+        @media screen and (min-width:1200px) {
+            width: 50%;
+        }
+        
+        &-subtitle{
+            font-size: 1.2rem;
+            font-family: "barlow condensed", sans-serif;
+            font-weight: 300;
+        }
+
+        &-title{
+            color: white;
+            padding: 1.5rem 0;
+            font-size: 5rem;
+            font-family: "bellefair", sans-serif;
+            font-weight: 500;
+        }
+
+        &-text{
+            font-family: "barlow", sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    &__link{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-link{
+            position: absolute;
+            bottom: 2rem;
+            font-family: "bellefair", sans-serif;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 9999px;
+            height: 130px;
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+
+            &:active{
+                box-shadow: 0 0 0rem 3rem rgba(255, 255, 255,0.3);
+            }
+            
+            @media screen and (min-width:750px) {
+                height: 190px;
+                width: 190px;
+            }
+
+            @media screen and (min-width:1200px) {
+                position: initial;
+                transform: translate(0);
+                background-color: white;
+                border-radius: 9999px;
+                height: 190px;
+                width: 190px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: rgb(11, 13, 23);
+            }
+        }
     }
 }
