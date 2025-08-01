@@ -1,0 +1,27 @@
+.home{
+    text-align: center;
+    color: #D0D6F9;
+    padding: 1rem 0;
+
+    &__title{
+        color: white;
+        padding: 1.5rem 0;
+        font-size: 3rem;
+    }
+
+    &__link{
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border-radius: 9999px;
+        height: 140px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+}

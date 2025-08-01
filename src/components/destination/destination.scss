@@ -1,0 +1,62 @@
+.destination{
+    color: #D0D6F9;
+    text-align: center;
+
+    &__image{
+        width: 60%;
+        margin: 2rem 0;
+    }
+
+    &__nav{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+
+        &-button{
+            border: none;
+            background: transparent;
+            color: #D0D6F9;
+
+            &:hover{
+                color: white;
+            }
+
+            &--selected{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__name{
+        color: white;
+        font-size: 4rem;
+    }
+
+    &__line{
+        width: 100%;
+        height: 1px;
+        background-color: #D0D6F9;
+        margin: 1rem 0;
+    }
+
+    &__information{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__distance{
+
+        &-distance{
+            color: white;
+        }
+    }
+
+    &__travel{
+
+        &-travel{
+            color: white;
+        }
+    }
+}

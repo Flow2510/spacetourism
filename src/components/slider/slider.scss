@@ -1,0 +1,25 @@
+.slider{
+
+    &__image{
+        width: 100%;
+    }
+
+    &__dots{
+        display: flex;
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: center;
+
+        &-dot{
+            background: rgb(180, 180, 180);
+            height: 15px;
+            width: 15px;
+            border-radius: 9999px;
+            border: none;
+
+            &--selected{
+                background: white;
+            }
+        }
+    }
+}
