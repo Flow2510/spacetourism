@@ -9,6 +9,20 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+
+    @media screen and (min-width:750px) {
+        background: url(../assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width:1200px) {
+        background: url(../assets/crew/background-crew-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 .crew{
