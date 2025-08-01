@@ -10,16 +10,20 @@ export default function Destinations() {
     }
 
     return(
-        <section className='destinations'>
-            <h2 className='destinations__title'><span className='destination__title-span'>01</span>PICK YOUR DESTINATION</h2>
-            <Destination
-                image={data.destinations[selectedIndex].images.webp}
-                name={data.destinations[selectedIndex].name}
-                description={data.destinations[selectedIndex].description}
-                distance={data.destinations[selectedIndex].distance}
-                travel={data.destinations[selectedIndex].travel}
-                onSelect={changeDestination}
-            />
-        </section>
+        <>
+            <div className='background-destinations'></div>
+            <section className='destinations'>
+                <h2 className='destinations__title'><span className='destination__title-span'>01</span>PICK YOUR DESTINATION</h2>
+                <Destination
+                    image={data.destinations[selectedIndex].images.webp}
+                    name={data.destinations[selectedIndex].name}
+                    description={data.destinations[selectedIndex].description}
+                    distance={data.destinations[selectedIndex].distance}
+                    travel={data.destinations[selectedIndex].travel}
+                    onSelect={changeDestination}
+                />
+            </section>
+        </>
+        
     )
 }

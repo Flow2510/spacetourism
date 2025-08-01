@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      <div className='background'></div>
       <Header />
       <main>
         <Routes>
@@ -20,7 +19,6 @@ function App() {
           <Route path='/technology' element={<Technology />} />
         </Routes>
       </main>
-
     </>
   )
 }

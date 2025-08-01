@@ -10,15 +10,19 @@ export default function Technology(){
     }
 
     return(
-        <section className='technology'>
-            <h2 className='technology__title'><span>03</span>SPACE LAUNCH 101</h2>
-            <Slider2 
-                image={data.technology[selectedIndex].images.portrait}
-                name={data.technology[selectedIndex].name}
-                technology={data.technology}
-                description={data.technology[selectedIndex].description}
-                setTechno={changeTechno}
-            />
-        </section>
+        <>
+            <div className='background-technology'></div>
+            <section className='technology'>
+                <h2 className='technology__title'><span>03</span>SPACE LAUNCH 101</h2>
+                <Slider2 
+                    image={data.technology[selectedIndex].images.portrait}
+                    name={data.technology[selectedIndex].name}
+                    technology={data.technology}
+                    description={data.technology[selectedIndex].description}
+                    setTechno={changeTechno}
+                />
+            </section>
+        </>
+        
     )
 }

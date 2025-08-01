@@ -10,16 +10,20 @@ export default function Crew() {
     }
 
     return(
-        <section className='crew'>
-            <h2><span>02</span>MEET YOUR CREW</h2>
-            <Slider 
-                category={data.crew[selectedIndex].role}
-                name={data.crew[selectedIndex].name}
-                description={data.crew[selectedIndex].bio}
-                image={data.crew[selectedIndex].images.webp}
-                crew={data.crew}
-                onSelect={changeMember}
-            />
-        </section>
+        <>
+            <div className='background-crew'></div>
+            <section className='crew'>
+                <h2><span>02</span>MEET YOUR CREW</h2>
+                <Slider 
+                    category={data.crew[selectedIndex].role}
+                    name={data.crew[selectedIndex].name}
+                    description={data.crew[selectedIndex].bio}
+                    image={data.crew[selectedIndex].images.webp}
+                    crew={data.crew}
+                    onSelect={changeMember}
+                />
+            </section>
+        </>
+        
     )
 }

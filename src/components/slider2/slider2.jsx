@@ -9,7 +9,7 @@ export default function Slider2({image, name, technology, description, setTechno
             <img className='slider2__image' src={image} alt={name} />
             <div className='slider2__list'>
                 {technology.map((tech, index) => (
-                    <button className={`slider2__list-button${technoSelected === index ? ' slider2__list-button--selected' : ''}`} key={tech} onClick={ () => {setTechnoSelected(index); setTechno(index)}}>{index + 1}</button>
+                    <button className={`slider2__list-button${technoSelected === index ? ' slider2__list-button--selected' : ''}`} key={index} onClick={ () => {setTechnoSelected(index); setTechno(index)}}>{index + 1}</button>
                 ))}
             </div>
             <div className='slider2__content'>

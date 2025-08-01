@@ -10,16 +10,3 @@ html{
 body{
     padding: 1rem;
 }
-
-.background{
-    background: url(./assets/home/background-home-mobile.jpg);
-    position: fixed; /* pour qu'elle reste en place pendant le scroll */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
