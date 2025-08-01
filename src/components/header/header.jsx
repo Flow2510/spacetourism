@@ -6,7 +6,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false);
+    const [selectedPage, setSelectedPage] = useState(0)
+    const menuList = ["HOME", "DESTINATIONS", "CREW", "TECHNOLOGY"];
+
     const showMenu = () => {
         setMenu(true);
     }
@@ -16,17 +19,16 @@ export default function Header() {
 
     return(
         <header className='header'>
-            <Link to='/'><img className='header__logo' src={logo} alt="Spacetourism Logo" /></Link>
+            <Link to='/home'><img className='header__logo' src={logo} alt="Spacetourism Logo" /></Link>
             <button className='header__button' onClick={showMenu}>
                 <img className='header__button-icon' src={iconMenu} alt="icon menu"/>
             </button>
             {menu && 
                 <nav className='header__nav'>
                     <ul className='header__list'>
-                        <li className='header__li'><Link to='/' className='header__li-link' onClick={closeMenu}>HOME</Link></li>
-                        <li className='header__li'><Link to='/destinations' className='header__li-link' onClick={closeMenu}><b>01</b> DESTINATION</Link></li>
-                        <li className='header__li'><Link to='/crew' className='header__li-link' onClick={closeMenu}><b>02</b> CREW</Link></li>
-                        <li className='header__li'><Link to='/technology' className='header__li-link' onClick={closeMenu}><b>03</b> TECHNOLOGY</Link></li>
+                        {menuList.map((item, index) => (
+                            <li key={item.toLowerCase()} className='header__li'><Link to={item} className={selectedPage === index ? 'header__li-link--selected' : "header__li-link"} onClick={ () => {closeMenu(); setSelectedPage(index)}}>{item}</Link></li>
+                        ))}
                     </ul>                
                     <button className='header__nav-button' onClick={closeMenu}><img src={iconClose} alt="" /></button>
                 </nav>
@@ -35,3 +37,5 @@ export default function Header() {
         </header>
     )
 }
+
+

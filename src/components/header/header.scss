@@ -40,6 +40,11 @@
         &-link{
             text-decoration: none;
             color: white;
+
+            &--selected{
+                text-decoration: underline;
+                color: white;
+            }
         }
     }
 }
