@@ -13,4 +13,20 @@
 
 .technology{
     color: white;
+    padding: 1rem 0;
+
+    &__title{
+        text-align: center;
+        font-family: "barlow", sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+
+        span{
+            color: rgb(119, 119, 119);
+            margin-right: 2rem;
+            font-family: "barlow condensed", sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+    }
 }

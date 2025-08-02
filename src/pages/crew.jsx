@@ -13,7 +13,7 @@ export default function Crew() {
         <>
             <div className='background-crew'></div>
             <section className='crew'>
-                <h2><span>02</span>MEET YOUR CREW</h2>
+                <h2 className='crew__title'><span>02</span>MEET YOUR CREW</h2>
                 <Slider 
                     category={data.crew[selectedIndex].role}
                     name={data.crew[selectedIndex].name}

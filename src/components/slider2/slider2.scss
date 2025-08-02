@@ -1,14 +1,19 @@
 .slider2{
     text-align: center;
+    padding: 1rem 0;
 
     &__image{
         width: 100%;
+        aspect-ratio: 1 / 0.65;
+        object-fit: cover;
+        margin: 1rem 0;
     }
 
     &__list{
         display: flex;
         gap: 1rem;
         justify-content: center;
+        padding: 1rem 0;
 
         &-button{
             background: transparent;
@@ -23,6 +28,28 @@
                 border: 1px solid white;
                 color: black;
             }
+        }
+    }
+
+    &__content{
+        padding: 1rem;
+
+        &-title{
+            font-size: 2rem;
+            text-transform: uppercase;   
+            font-family: "bellefair", sans-serif;
+            font-weight: 400;
+            padding: 1.5rem;
+        }
+
+        &-description{
+            color: #D0D6F9;
+            line-height: 1.6rem;
+        }
+
+        &-subtitle{
+            font-size: 1.4rem;
+            color: #a3a3a3;
         }
     }
 }

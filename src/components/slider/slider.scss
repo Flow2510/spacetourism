@@ -1,7 +1,33 @@
 .slider{
 
     &__image{
+        aspect-ratio: 0.95/1;
         width: 100%;
+        object-fit: contain;
+    }
+
+    &__content{
+        padding: 2rem 0;
+
+        &-category{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color: rgb(119, 119, 119);
+        }
+
+        &-description{
+            padding: 2rem 0;
+            color: #D0D6F9;
+            line-height: 1.6rem;
+        }
+
+        &-name{
+            font-size: 2rem;
+            text-transform: uppercase;   
+            font-family: "bellefair", sans-serif;
+            font-weight: 400;
+            padding-top: 0.5rem;
+        }
     }
 
     &__dots{
@@ -9,9 +35,10 @@
         gap: 0.5rem;
         width: 100%;
         justify-content: center;
+        padding: 1rem;
 
         &-dot{
-            background: rgb(180, 180, 180);
+            background: rgb(119, 119, 119);
             height: 15px;
             width: 15px;
             border-radius: 9999px;
